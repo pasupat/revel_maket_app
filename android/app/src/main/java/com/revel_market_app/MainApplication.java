@@ -9,6 +9,8 @@ import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+// Add Camera
+import com.wix.RNCameraKit.RNCameraKitPackage;
 
 public class MainApplication extends Application implements ReactApplication {
 
@@ -24,6 +26,9 @@ public class MainApplication extends Application implements ReactApplication {
           @SuppressWarnings("UnnecessaryLocalVariable")
           List<ReactPackage> packages = new PackageList(this).getPackages();
           // Packages that cannot be autolinked yet can be added manually here, for example:
+          
+          // Add Camera
+          // packages.add(new RNCameraKitPackage());
           // packages.add(new MyReactNativePackage());
           return packages;
         }
